@@ -1,0 +1,305 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@100&display=swap");
+* {
+  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Mono", monospace;
+}
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+.btn-large {
+  width: 35rem;
+  height: 2.5rem;
+  border-radius: 0;
+}
+.btn-small {
+  width: 4rem;
+  height: 2.5rem;
+  border-radius: 0;
+  margin-right: 4rem;
+}
+.navbar-main {
+  position: relative;
+  right: 1.6rem;
+}
+.navbar-logo img {
+  height: 2rem;
+}
+.navbar-brand {
+  font-size: 1.3rem;
+  font-weight: bolder;
+  position: relative;
+  right: 0.6rem;
+  letter-spacing: -1.5px;
+}
+.navbar-brand span {
+  font-size: 0.6rem;
+  font-weight: normal;
+  position: relative;
+  right: 0.6rem;
+  bottom: 0.9rem;
+}
+
+.navbar {
+  padding-bottom: 0;
+  align-items: center;
+  justify-items: center;
+  padding: 0 1.5rem;
+  background: #ffffff;
+}
+.nav-icons {
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+}
+.dev-mob {
+  display: none;
+}
+.search-mic {
+  font-size: 1.1rem;
+  right: 4rem;
+  position: relative;
+  background-color: #ebebeb;
+  border-radius: 50%;
+}
+/* sidebar starts here */
+.main {
+  overflow: auto;
+  height: 36rem;
+  width: 14.5rem;
+  position: fixed;
+  scroll-behavior: smooth;
+  /* border: 1px solid black; */
+}
+/* .main::-webkit-scrollbar {
+} */
+::-webkit-scrollbar {
+  width: 6px;
+}
+.main::-webkit-scrollbar-thumb:hover {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background-color: #918f8f;
+}
+.main ul {
+  padding-top: 1rem;
+  list-style: none;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 3.5rem;
+}
+.main ul li:hover {
+  background: #dad7d7;
+}
+.main ul .active-home {
+  background: #dad7d7;
+}
+.side-6 a {
+  text-decoration: none;
+  color: gray;
+  font-size: 0.8rem;
+  text-align: center;
+}
+.side-6 {
+  margin: 1rem 1rem;
+}
+.side-3 h6,
+.side-4 h6 {
+  position: relative;
+  right: 1rem;
+}
+/* home section starts here */
+.home-section {
+  padding: 0.5rem 1.2rem;
+}
+.home-section button:first-child {
+  border: none;
+  border-right: 1px solid silver;
+  background: #fff;
+  display: none;
+}
+.home-section .round-btn {
+  font-size: 0.8rem;
+  border: 1px solid silver;
+  border-radius: 40px;
+  margin: 5px;
+  padding: 4px 12px;
+}
+.home-section .round-btn:hover {
+  background: #000;
+  color: #ffffff;
+}
+.home-section .round-btn:nth-child(2) {
+  background: #000;
+  color: #ffffff;
+}
+.card-section-1 img {
+  height: 10rem;
+  text-align: left;
+  border-radius: 0rem;
+}
+.card-section-1 .profile-img {
+  height: 2rem;
+  border-radius: 50%;
+  float: left;
+  position: relative;
+  right: 0.5rem;
+}
+.card-section-1 .card-heading .card-title {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 1.1rem;
+  font-weight: bolder;
+  max-height: 4rem;
+}
+.card-section-1 .card-heading .card-text i {
+  font-size: 0.8rem;
+}
+.card-section-1 .card-heading .card-text {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 1rem;
+  font-weight: bolder;
+  max-height: 4rem;
+}
+/* home section ends here */
+/* card section starts here */
+.card {
+  border-radius: 0rem;
+  border: none;
+}
+/* card section ends here */
+
+/* Media Query starts here */
+@media (max-width: 1268px) {
+  html {
+    font-size: 75%;
+  }
+}
+@media (max-width: 992px) {
+  html {
+    font-size: 65%;
+  }
+  .header-section,
+  .home-section,
+  .home-card-sections {
+    padding-right: 0rem 2rem;
+  }
+  .home-section {
+    padding: 0.5rem 0.2rem;
+  }
+  .navbar-main {
+    position: relative;
+    right: 5rem;
+  }
+  .navbar-logo img {
+    height: 2.5rem;
+  }
+  .navbar-brand {
+    font-size: 2rem;
+    font-weight: bolder;
+  }
+
+  .main {
+    overflow: auto;
+    height: 36rem;
+    width: 17rem;
+    position: fixed;
+    left: 5rem;
+  }
+  .main ul {
+    padding-top: 1rem;
+    list-style: none;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 3.5rem;
+  }
+  .btn-large {
+    width: 25rem;
+    height: 2.5rem;
+    border-radius: 0;
+  }
+  .btn-small {
+    width: 4rem;
+    height: 2.5rem;
+    border-radius: 0;
+    margin-right: 4rem;
+  }
+}
+.nav-icons-2 {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: none;
+  background: #fff;
+  justify-content: space-around;
+  gap: 2rem;
+}
+.nav-icons-2 i {
+  font-size: 1.5rem;
+  padding: 1rem 3rem;
+}
+.nav-icons-2 div:hover {
+  background: #e7e7e7;
+}
+.nav-icons-2 p {
+  font-size: 1rem;
+  text-align: center;
+}
+.create-plus i {
+  font-size: 3rem;
+}
+@media (max-width: 774px) {
+  .nav-icons-2 {
+    display: flex;
+  }
+  .btn-large,
+  .search-mic,
+  .btn-small,
+  .main,
+  .navbar-toggler-icon {
+    display: none;
+  }
+  .navbar-main {
+    position: relative;
+    right: 10rem;
+  }
+  .home-section {
+    height: 4rem;
+    overflow-y: hidden;
+  }
+  .dev-mob {
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+  }
+  .nav-icons {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .navbar-main {
+    position: relative;
+    right: 6rem;
+  }
+  .dev-mob {
+    font-size: 2rem;
+    display: flex;
+    /* justify-content: space-around; */
+    gap: 3rem;
+  }
+  .nav-icons-2 i {
+    font-size: 1.5rem;
+    padding: 1rem 1rem;
+    text-align: center;
+  }
+  .create-plus i {
+    font-size: 3rem;
+  }
+}
+/* Media Query ends here */
