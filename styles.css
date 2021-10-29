@@ -309,5 +309,9 @@ body {
     text-align: left;
     border-radius: 0rem;
   }
+  .header-section .navbar {
+    position: relative;
+    margin-bottom: -2rem;
+  }
 }
 /* Media Query ends here */
