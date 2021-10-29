@@ -284,7 +284,7 @@ body {
 @media (max-width: 500px) {
   .navbar-main {
     position: relative;
-    right: 2rem;
+    right: 3rem;
   }
   .dev-mob {
     font-size: 2rem;
@@ -305,7 +305,7 @@ body {
     font-size: 3rem;
   }
   .card-section-1 img {
-    height: 13rem;
+    height: 16rem;
     text-align: left;
     border-radius: 0rem;
   }
