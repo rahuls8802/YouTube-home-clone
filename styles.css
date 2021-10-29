@@ -237,11 +237,10 @@ body {
   display: none;
   background: #fff;
   justify-content: space-around;
-  gap: 2rem;
 }
 .nav-icons-2 i {
   font-size: 1.5rem;
-  padding: 1rem 3rem;
+  padding: 0.4rem 3rem;
 }
 .nav-icons-2 div:hover {
   background: #e7e7e7;
@@ -285,21 +284,30 @@ body {
 @media (max-width: 500px) {
   .navbar-main {
     position: relative;
-    right: 6rem;
+    right: 2rem;
   }
   .dev-mob {
     font-size: 2rem;
     display: flex;
-    /* justify-content: space-around; */
-    gap: 3rem;
+    gap: 2rem;
   }
   .nav-icons-2 i {
-    font-size: 1.5rem;
-    padding: 1rem 1rem;
+    font-size: 1.7rem;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    justify-content: center;
+  }
+  .nav-icons-2 p {
+    font-size: 1rem;
     text-align: center;
   }
   .create-plus i {
     font-size: 3rem;
+  }
+  .card-section-1 img {
+    height: 13rem;
+    text-align: left;
+    border-radius: 0rem;
   }
 }
 /* Media Query ends here */
